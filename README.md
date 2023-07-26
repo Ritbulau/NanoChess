@@ -46,9 +46,11 @@ ___
 Please note that the game itself is designed for two players and does not contain a chess bot.
 
 The first thing you will see after the start screen is the settings menu. Here you can choose one of three game modes: classic, timed and incremental.
-
+![classic](/images/Classic.png?raw=true)
+![timed](/images/Timed.png?raw=true)
+![incremental](/images/Incremental.png?raw=true)
 Please note that you cannot start the game in one of the two time modes if the clock indicators are at zero!
-
+![UI hint 1-10](/images/UI.png?raw=true)
 Then, running into the game itself, you will see a frightening picture at first, but everything is quite simple.
 In the picture, the numbers from 1 to 10 indicate different game elements.
 1) example of a white piece (here it is a pawn)
@@ -61,7 +63,7 @@ In the picture, the numbers from 1 to 10 indicate different game elements.
 8) text showing which cell the cursor is on, and what is on this cell (it is necessary that it would be easier to determine where and on which figure the cursor is)
 9) text showing which chess piece is selected and where it is located.
 10) the selected chess piece (here it is a pawn), there are always 4 pixels around the selected piece, like the cursor, but unlike it, they do not blink.
-
+![UI hint 11](/images/UI2.png?raw=true)
 The second picture shows an example of the action of the object 11) a window for displaying information about a victory, a check and a draw.
 
 
@@ -72,7 +74,7 @@ So you are trained in the rules, have a good game!
 ___
 
 #### **TRAILER**
-[![see it in actrion](/images/pr.png?raw=true)](https://youtu.be/dTjVVqMz2J8)
+[![see it in actrion](/images/prev2.png?raw=true)](https://youtu.be/4uxslUcWOHw)
 
 ___
 
