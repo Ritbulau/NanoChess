@@ -94,3 +94,109 @@ bool input_fire() {
   return digitalRead(K_FIRE) == INPUT_STATE;
 };
 #endif
+
+bool ifo, ifoa;
+bool iuo, iuoa;
+bool ido, idoa;
+bool ilo, iloa;
+bool iro, iroa;
+
+bool input_fire_once(){
+  bool result = false;
+  if(input_fire()){
+    ifo = true;
+  }
+  else{
+    ifo = false;
+    ifoa = false;
+  }
+  if(!ifoa && ifo){
+    ifoa = true;
+    result = true;
+  }
+  return result;
+}
+
+
+bool input_up_once(){
+  bool result = false;
+  if(input_up()){
+    iuo = true;
+  }
+  else{
+    iuo = false;
+    iuoa = false;
+  }
+  if(!iuoa && iuo){
+    iuoa = true;
+    result = true;
+  }
+  return result;
+}
+
+
+bool input_down_once(){
+  bool result = false;
+  if(input_down()){
+    ido = true;
+  }
+  else{
+    ido = false;
+    idoa = false;
+  }
+  if(!idoa && ido){
+    idoa = true;
+    result = true;
+  }
+  return result;
+}
+
+
+bool input_left_once(){
+  bool result = false;
+  if(input_left()){
+    ilo = true;
+  }
+  else{
+    ilo = false;
+    iloa = false;
+  }
+  if(!iloa && ilo){
+    iloa = true;
+    result = true;
+  }
+  return result;
+}
+
+bool input_right_once(){
+  bool result = false;
+  if(input_right()){
+    iro = true;
+  }
+  else{
+    iro = false;
+    iroa = false;
+  }
+  if(!iroa && iro){
+    iroa = true;
+    result = true;
+  }
+  return result;
+}
+
+
+bool ifu;
+
+bool input_fire_up(){
+  if(input_fire()){
+    ifu = true;
+    return false;
+  }
+  else if(!input_fire() && ifu == true){
+    ifu = false;
+    return true;
+  }
+  else{
+    return false;
+  }
+}

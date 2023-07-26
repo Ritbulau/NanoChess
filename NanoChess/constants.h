@@ -39,6 +39,7 @@ constexpr uint8_t SOUND_PIN   = 9; // do not change, belongs to used timer
 // scenes
 #define INTRO                 0
 #define TEST                  1
+#define SETTINGS              2
 
 // Game
 

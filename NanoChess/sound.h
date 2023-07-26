@@ -77,7 +77,7 @@ constexpr uint8_t mus_s21_snd[] PROGMEM = {0x89, 0x89, 0x89, 0x89, 0x89, 0x89, 0
 
 constexpr uint8_t MUS_P21_SND_LEN = 19;
 constexpr uint8_t mus_p21_snd[] PROGMEM = {0x15, 0x15, 0x15, 0x15, 0x15, 0x15, 0x15, 0x15, 0x15, 0x15, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, };
-
+    
 //S1
 
 constexpr uint8_t MUS_P22_SND_LEN = 19;
@@ -145,6 +145,15 @@ constexpr uint8_t medkit_snd[] PROGMEM = {0x55 , 0x20 , 0x3a , 0x3a , 0x3a , 0x2
 constexpr uint8_t MELEE_SND_LEN = 9;
 constexpr uint8_t melee_snd[] PROGMEM = {0x8f, 0x8e, 0x8e};
 
+constexpr uint8_t MOVE_SND_LEN = 8;
+constexpr uint8_t move_snd[] PROGMEM = { 0x83 , 0x83 , 0x82 , 0x8e , 0x8a , 0x89 , 0x86 , 0x84};
+
+constexpr uint8_t EAT_SND_LEN = 8;
+constexpr uint8_t eat_snd[] PROGMEM = { 0x20 , 0x20 , 0x22 , 0x2e , 0x2a , 0x29 , 0x26 , 0x24};
+
+constexpr uint8_t CANT_SND_LEN = 24;
+constexpr uint8_t cant_snd[] PROGMEM = { 0x20 , 0x20 , 0x20 , 0x20 , 0x20 , 0x20 , 0x20 , 0x20,  0x99 , 0x99 , 0x99 , 0x99 , 0x99 , 0x99 , 0x99 , 0x99};
+
 
 uint8_t idx = 0;
 bool sound = false;
@@ -161,8 +170,8 @@ void sound_init() {
   TIMSK2 = (1 << OCIE2A);
 }
 
-void playSound(const uint8_t* snd, uint8_t len) {
-  snd_ptr = reinterpret_cast<uint16_t>(snd);
+void playSound(const uint8_t* snd, uint16_t len) {
+  snd_ptr = reinterpret_cast<uint32_t>(snd);
   snd_len = len;
   sound = true;
 }

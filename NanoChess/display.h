@@ -183,6 +183,20 @@ void drawChar(int8_t x, int8_t y, char ch) {
   }
 }
 
+// Draw a string
+void drawText(int8_t x, int8_t y, char *txt, uint8_t space) {
+  uint8_t pos = x;
+  uint8_t i = 0;
+  char ch;
+  while ((ch = txt[i]) != '\0') {
+    drawChar(pos, y, ch);
+    i++;
+    pos += CHAR_WIDTH + space;
+
+    // shortcut on end of screen
+    if (pos > SCREEN_WIDTH) return;
+  }
+}
 
 
 // Draw a F() string
@@ -197,9 +211,21 @@ void drawText(int8_t x, int8_t y, const __FlashStringHelper *txt_p, uint8_t spac
   }
 }
 
-// Draw an integer (3 digit max!)
-void drawText(uint8_t x, uint8_t y, int16_t num) {
-  char buf[4]; // 3 char + \0
+// Draw an integer
+void drawNum(uint8_t x, uint8_t y, int16_t num) {
+  char buf[6]; // 3 char + \0
+
+  char empty[2];
+  itoa(1, empty, 10);
+
   itoa(num, buf, 10);
-  drawText(x, y, buf);
+
+  for(int8_t i = 0; i < sizeof(buf) / sizeof(buf[0]); i++){
+    if(buf[i] == empty[1]){
+      break;
+    }
+    else{
+      drawChar(x+i*5,y,buf[i]);
+    }
+  }
 }

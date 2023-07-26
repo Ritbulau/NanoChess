@@ -33,4 +33,3 @@ Coords create_coords(double x, double y);
 uint8_t coords_distance(Coords* a, Coords* b);
 
 #endif
-
