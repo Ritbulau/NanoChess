@@ -7,9 +7,9 @@ ____
 
 Now Doom Nano Brutality is playable on Wokwi!
 
-[Wokwi Nano Chess emulator link](https://wokwi.com/projects/371239802117756929)
+[Wokwi Nano Chess emulator link](https://wokwi.com/projects/371236223885557761)
 
-[Wokwi Nano Chess emulator with no sound, but with better performance link](https://wokwi.com/projects/371236223885557761)
+[Wokwi Nano Chess emulator with no sound, but with better performance link](https://wokwi.com/projects/371330181778109441)
 
 Also, all projects based on Nano Engine can be launched on Wokwi!
 
