@@ -1,5 +1,5 @@
 # NANO CHESS
-![logo](/images/NanoChessLogoR.png?raw=true)
+![logo](/Images/NanoChessLogoR.png?raw=true)
 ## A fully playable chess game for Arduino Nano/Uno
 ____
 
@@ -29,7 +29,7 @@ If you don't know, how to install, here is the instruction:
 
 ### Wiring
 
-![wiring](/images/wiring.png?raw=true)
+![wiring](/Images/wiring.png?raw=true)
 (Nano have all pins, that Uno does, but in different places).
 ___
 
@@ -47,13 +47,13 @@ Please note that the game itself is designed for two players and does not contai
 
 The first thing you will see after the start screen is the settings menu. Here you can choose one of three game modes: classic, timed and incremental.
 
-![classic](/images/Classic.png?raw=true)
-![timed](/images/Timed.png?raw=true)
-![incremental](/images/Incremental.png?raw=true)
+![classic](/Images/Classic.png?raw=true)
+![timed](/Images/Timed.png?raw=true)
+![incremental](/Images/Incremental.png?raw=true)
 
 Please note that you cannot start the game in one of the two time modes if the clock indicators are at zero!
 
-![UI hint 1-10](/images/UI.png?raw=true)
+![UI hint 1-10](/Images/UI.png?raw=true)
 
 Then, running into the game itself, you will see a frightening picture at first, but everything is quite simple.
 In the picture, the numbers from 1 to 10 indicate different game elements.
@@ -68,7 +68,7 @@ In the picture, the numbers from 1 to 10 indicate different game elements.
 9) text showing which chess piece is selected and where it is located.
 10) the selected chess piece (here it is a pawn), there are always 4 pixels around the selected piece, like the cursor, but unlike it, they do not blink.
     
-![UI hint 11](/images/UI2.png?raw=true)
+![UI hint 11](/Images/UI2.png?raw=true)
 
 The second picture shows an example of the action of the object 11) a window for displaying information about a victory, a check and a draw.
 
@@ -80,7 +80,7 @@ So you are trained in the rules, have a good game!
 ___
 
 #### **TRAILER**
-[![see it in actrion](/images/prev2.png?raw=true)](https://youtu.be/4uxslUcWOHw)
+[![see it in actrion](/Images/prev2.png?raw=true)](https://youtu.be/4uxslUcWOHw)
 
 ___
 
