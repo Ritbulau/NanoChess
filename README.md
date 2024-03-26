@@ -20,7 +20,7 @@ This is a Chess game, based on Nano Engine (currently not for public), that was 
 If you don't know, how to install, here is the instruction:
 1. Wire whole thing up.
 2. Download Arduino IDE and connect your Arduino Nano/Uno to it.
-3. Download mod files and unpack doom-nano-brutality folder.
+3. Download mod files and unpack NanoChess folder.
 4. Open NanoChess.ino file.
 5. Press "Upload".
 6. Done!
