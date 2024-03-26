@@ -3,10 +3,6 @@
 ## A fully playable chess game for Arduino Nano/Uno
 ____
 
-## Multi-platform playability
-
-Now Doom Nano Brutality is playable on Wokwi!
-
 # WARNING! RUN NANO CHESS IN WOKWI ONLY USING THE DEBUG MODE!
 
 [Wokwi Nano Chess emulator link](https://wokwi.com/projects/371236223885557761)
